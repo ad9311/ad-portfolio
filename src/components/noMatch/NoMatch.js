@@ -8,7 +8,7 @@ const NoMatch = () => {
     if (path !== '/' || path !== '/about' || path !== '/contact') {
       navigate('/');
     }
-  });
+  }, []);
 
   return (
     <div />

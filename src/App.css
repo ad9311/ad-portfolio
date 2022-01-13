@@ -1,0 +1,32 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&display=swap');
+
+:root {
+  --onyx: #28292a;
+  --powder: #fffffa;
+}
+
+* {
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--powder);
+  color: var(--onyx);
+  border-top: 0.25rem solid var(--onyx);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+main {
+  margin: 0 auto 5rem auto;
+  padding: 0 1rem;
+  max-width: 992px;
+}

@@ -1,0 +1,113 @@
+.projects {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 1fr;
+  column-gap: 1rem;
+  row-gap: 2rem;
+  opacity: 0;
+  transition: all 0.5s ease-in;
+}
+
+.projectsOn {
+  opacity: 1;
+}
+
+.myProjects {
+  position: relative;
+  height: 15rem;
+}
+
+.projectBg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: var(--onyx);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.5s ease-in;
+}
+
+.name {
+  padding: 0.35rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--onyx);
+  color: var(--powder);
+  font-size: 0.75rem;
+}
+
+.moreBtn {
+  padding: 0.15rem 0.5rem;
+  background-color: transparent;
+  border: none;
+}
+
+.links {
+  height: 0;
+  overflow: hidden;
+  opacity: 1;
+  background-color: hsla(0, 0%, 75%, 0.75);
+  backdrop-filter: blur(2px);
+  transition: all 0.35s ease-in-out;
+}
+
+.linksOn {
+  height: 100%;
+  opacity: 1;
+}
+
+.desc {
+  padding: 0.5rem;
+}
+
+.desc p {
+  font-size: 1rem;
+}
+
+.linksGroup {
+  padding: 0.5rem;
+}
+
+.linksGroup a {
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding: 0.35rem 0.2rem;
+  width: 3.5rem;
+  background-color: var(--onyx);
+  color: var(--powder);
+  font-size: 0.85rem;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  transition: all 0.5s ease;
+}
+
+.linksGroup a:hover {
+  opacity: 0.95;
+  box-shadow: 0 0 0.5rem 0.25rem silver;
+}
+
+@media screen and (min-width: 420px) {
+  .desc p {
+    font-size: 1.1rem;
+  }
+
+  .linksGroup a {
+    margin-right: 1rem;
+    padding: 0.35rem 0.35rem;
+    width: 4.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+}

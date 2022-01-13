@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
@@ -27,7 +28,7 @@ const Header = () => {
         dispatch(selectProject('default'));
       }
     }
-  }, [target, dispatch, selected, show]);
+  }, [target]);
 
   return (
     <header className={

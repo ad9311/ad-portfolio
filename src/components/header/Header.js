@@ -27,7 +27,7 @@ const Header = () => {
         dispatch(selectProject('default'));
       }
     }
-  }, [target]);
+  }, [target, dispatch, selected, show]);
 
   return (
     <header className={
